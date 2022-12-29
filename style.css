@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Gilda+Display&family=Nanum+Gothic&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    --main-bg-color: #fef9f8; 
+    --teal: #668586; 
+    --eerie-black: #222222;
+    --orange: #F4743B;
+    display: flex;
+    justify-content: center; 
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--main-bg-color); 
+    height: 100vh; 
+    color: var(--eerie-black); 
+}
+
+a { 
+    color: var(--eerie-black); 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: var(--orange); 
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    height: 100%; 
+}
+
+.nav { 
+    height: 10%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--eerie-black);
+}
+
+.nav-left { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#right { 
+    display: flex;
+    width: 50%; 
+    justify-content: flex-end;
+}
+
+.hero { 
+    height: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 9rem;
+    letter-spacing: .5rem;
+    color: var(--orange); 
+    border-bottom: 1px solid var(--teal);
+}
+
+@media (max-width: 700px) {
+  body {
+    --size: 14px;
+  } 
+
+  .hero { 
+    font-size: 4rem;
+  }
+
+  .nav { 
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 20vh;
+    justify-content: space-around;
+  }
+
+  .nav-left { 
+    height: 50px; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #right { 
+    display: none;
+  }
+
+}
+
+@media (max-width: 300px) {
+    .hero { 
+        font-size: 20px;
+    }
+}
