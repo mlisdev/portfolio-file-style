@@ -62,8 +62,7 @@ a:hover {
 }
 
 
-.banner { 
-    height: 30%; 
+.banner {  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,24 +71,27 @@ a:hover {
 }
 
 .banner img { 
-    height: 100%; 
+    height: 100%;
+    width: 50%;
 }
 
 .banner-item { 
-    height: 100%; 
-    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
 } 
 
 .banner-item p { 
     text-align: center;
     font-family: 'Gilda Display', serif;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 200;
     color: var(--eerie-black); 
 }
 
 #smaller { 
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 200;
 }
 
@@ -119,19 +121,13 @@ a:hover {
     --size: 14px;
   } 
 
-  .hero { 
-    font-size: 4rem;
-  }
-
   .nav { 
     flex-wrap: wrap;
     flex-direction: row;
-    height: 35%;
     justify-content: space-around;
   }
 
   .nav-left { 
-    height: 50px; 
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -140,13 +136,48 @@ a:hover {
     display: none;
   }
 
-  .hero { 
-    height: 50%;
-  }
+  .banner {  
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--eerie-black);
 }
 
-@media (max-width: 300px) {
-    .hero { 
-        font-size: 20px;
-    }
+.banner img { 
+    /* height: 80%; */
+    width: 60%;
+}
+
+.banner-item { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    margin-top: 10px; 
+} 
+
+.banner-item p { 
+    text-align: center;
+    font-family: 'Gilda Display', serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--eerie-black); 
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+#smaller { 
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#smallest { 
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+
 }
