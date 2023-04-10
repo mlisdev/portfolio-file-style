@@ -10,8 +10,6 @@ body {
     --accent: #9D944F;
     --eerie-black: #222222;
     height: 100vh; 
-    display: flex;
-    justify-content: center; 
     font-family: 'Nunito', sans-serif;
     font-size: 1.2rem;
     background-color: var(--bg-color); 
@@ -22,11 +20,12 @@ body {
     background-color: var(--tertiary);
     font-family: 'Nunito', sans-serif;
     font-size: 60px;
-    color: var(--primary); 
+    color: var(--primary);
 }
 
 #title h1 { 
     font-family: 'Melodrama', serif;
     font-size: 120px; 
+    padding: 0; 
 }
 
