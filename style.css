@@ -1,30 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Gilda+Display&family=Nanum+Gothic&display=swap');
-
 * { 
     box-sizing: border-box; 
 }
 
 body { 
-    --bg-color: #FDF1ED; 
+    --bg-color: #FFFFFF; 
     --primary: #97503B; 
-    --eerie-black: #222222;
     --secondary: #D65F56;
+    --tertiary: #FDF1ED; 
     --accent: #9D944F;
+    --eerie-black: #222222;
+    height: 100vh; 
     display: flex;
     justify-content: center; 
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
     background-color: var(--bg-color); 
-    height: 100vh; 
     color: var(--eerie-black); 
 }
 
 #title { 
+    background-color: var(--tertiary);
     font-family: 'Nunito', sans-serif;
     font-size: 60px;
+    color: var(--primary); 
 }
 
 #title h1 { 
     font-family: 'Melodrama', serif;
     font-size: 120px; 
 }
+
