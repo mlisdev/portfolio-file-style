@@ -29,3 +29,21 @@ body {
     padding: 0; 
 }
 
+#about span { 
+    background-color: #D65F56;
+     
+}
+
+a, a:link {
+    color: var(--eerie-black);
+    text-decoration: none;
+    background-position-y: -0%;
+    background-image: linear-gradient( white 50%, var(--secondary) 50%);
+    transition: background 500ms ease;
+    background-size: 2px;
+    background-size: auto 175%;
+  }
+  
+  a:hover {
+    background-position-y: 100%;
+  }
