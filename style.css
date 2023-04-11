@@ -30,11 +30,17 @@ body {
 }
 
 #about span { 
-    background-color: #D65F56;
-     
+    background-color: var(--secondary);
+    color: var(--tertiary); 
+    margin-bottom: 1.2rem;
+    padding: 5px;
 }
 
-a, a:link {
+#about p { 
+    margin-bottom: 1.2rem;
+}
+
+#about a {
     color: var(--eerie-black);
     text-decoration: none;
     background-position-y: -0%;
@@ -42,8 +48,16 @@ a, a:link {
     transition: background 500ms ease;
     background-size: 2px;
     background-size: auto 175%;
+    padding: 2px;
   }
   
-  a:hover {
+  #about a:hover {
     background-position-y: 100%;
   }
+
+  #file-table a { 
+    color: var(--eerie-black); 
+    text-decoration: underline;
+  }
+
+  
